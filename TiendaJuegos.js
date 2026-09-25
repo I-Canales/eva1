@@ -126,7 +126,29 @@ if (formRegistro) {
   }
 
   function enviar() {
-    const email = document.getElementById('form-email')
+    const nombre = document.getElementById('nombre')
+    
+    console.log('el tipo de dato del input email es: ' + nombre.value.length)
+
+    if (nombre,nombre.value.length == 0){
+        alert('el campo debe de tener un valor')
+        return false
+    }
+
+    if (nombre.value.length <=100){
+        alert('exedes el limite de carateres ')
+        return false
+    }
+
+
+
+    return true
+  }
+  
+  
+  
+  function enviar() {
+    const email = document.getElementById('correo')
     
     console.log('el tipo de dato del input email es: ' + email.value.length)
 
@@ -134,6 +156,13 @@ if (formRegistro) {
         alert('el campo email debe tener un valor')
         return false
     }
+
+    if (email.value.length <=100){
+        alert('exedes el limite de carateres ')
+        return false
+    }
+
+
 
     return true
   }
