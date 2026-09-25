@@ -22,6 +22,20 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.nav-links{
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #333;
+    padding: 10px;
+}
+
 #productos {
   list-style: none;
   padding: 0;
@@ -103,4 +117,50 @@ button:hover {
     font-size: 12px;
     display: block;
     margin-top: 4px;
+}
+
+.destacados{
+    width: 120px; 
+    height: 120px; 
+    object-fit: cover;
+}
+
+.footer{
+    margin-top: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+#fundador{
+    width: 200px;
+    height: auto;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.index-html{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.imagen-logo{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.logo-text{
+    font-weight: bold;
+}
+
+.mesaje-exitoso{
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
 }

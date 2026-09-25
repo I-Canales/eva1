@@ -125,16 +125,18 @@ if (formRegistro) {
     return mensaje === "";
   }
 
-  [nombre, correo, telefono, apodo, usuario, clave, claveConfirmacion].forEach((input) => {
-    if(input) {
-      input.addEventListener("blur", () => validarCampo(input));
-      input.addEventListener("input", () => {
-        if (input.classList.contains("campo-invalido")) {
-          validarCampo(input);
-        }
-      });
+  function enviar() {
+    const email = document.getElementById('form-email')
+    
+    console.log('el tipo de dato del input email es: ' + email.value.length)
+
+    if (email.value.length == 0){
+        alert('el campo email debe tener un valor')
+        return false
     }
-  });
+
+    return true
+  }
 
   formRegistro.addEventListener("submit", (evento) => {
     evento.preventDefault();
