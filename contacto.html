@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Registro - Tienda de Juegos</title>
+    <link rel="stylesheet" href="casa.css">
+</head>
+<body>
+
+    <nav class="navbar" style="display: flex; align-items: center; gap: 15px; background-color: #333; padding: 10px;">
+        <a href="index.html" class="logo-container" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: white;">
+            <img src="Imagenes/logo.png" alt="Mi Logo" class="logo-img" style="width: 30px; height: 30px; object-fit: contain;">
+            <span class="logo-text" style="font-weight: bold;">El Dardo Loco</span>
+        </a>
+        
+        <div class="nav-links" style="display: flex; gap: 15px; margin-left: auto;">
+            <a href="index.html" style="color: white; text-decoration: none;">Inicio</a>
+            <a href="productos.html" style="color: white; text-decoration: none;">Productos</a>
+            <a href="contacto.html" style="color: white; text-decoration: none;">Contacto / Registro</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Formulario de Registro y Contacto</h1>
+    </header>
+
+    <main>
+        <form id="form-registro" novalidate>
+            
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <span id="error-nombre" class="error-texto"></span>
+            </div>
+
+            <div>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="text" id="correo" name="correo" placeholder="ej: ja.pere@duocuc.cl">
+                <span id="error-correo" class="error-texto"></span>
+            </div>
+
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono">
+                <span id="error-telefono" class="error-texto"></span>
+            </div>
+
+            <div>
+                <label for="apodo">Apodo (Opcional):</label>
+                <input type="text" id="apodo" name="apodo">
+                <span id="error-apodo" class="error-texto"></span>
+            </div>
+
+            <div>
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario">
+                <span id="error-usuario" class="error-texto"></span>
+            </div>
+
+            <div>
+                <label for="clave">Contraseña:</label>
+                <input type="password" id="clave" name="clave">
+                <span id="error-clave" class="error-texto"></span>
+            </div>
+
+            <div>
+                <label for="clave-confirmacion">Confirmar Contraseña:</label>
+                <input type="password" id="clave-confirmacion" name="clave-confirmacion">
+                <span id="error-clave-confirmacion" class="error-texto"></span>
+            </div>
+
+            <div>
+                <input type="checkbox" id="terminos" name="terminos">
+                <label for="terminos" style="display:inline;">Acepto los términos y condiciones</label>
+                <span id="error-terminos" class="error-texto"></span>
+            </div>
+
+            <button type="submit">Registrarse / Enviar</button>
+
+            <p id="mensaje-exito" hidden style="color: green; font-weight: bold; margin-top: 15px;">
+                ¡Registro exitoso! Los datos han sido enviados correctamente.
+            </p>
+
+        </form>
+    </main>
+
+    <footer id="footer" style="margin-top: 30px; font-size: 14px; color: #666;">
+        El Dardo Loco - Todos los derechos reservados
+    </footer>
+
+    <script src="TiendaJuegos.js"></script>
+</body>
+</html>
